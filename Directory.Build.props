@@ -17,9 +17,6 @@
         <Reference Include="MelonLoader">
             <HintPath>$(VRChatPath)\MelonLoader\MelonLoader.dll</HintPath>
         </Reference>
-        <Reference Include="VRChatUtilityKit">
-            <HintPath>$(VRChatPath)\Mods\VRChatUtilityKit.dll</HintPath>
-        </Reference>
         <Reference Include="Il2Cppmscorlib">
             <HintPath>$(VRChatPath)\MelonLoader\Managed\Il2Cppmscorlib.dll</HintPath>
         </Reference>
