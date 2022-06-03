@@ -4,6 +4,7 @@
 *.suo
 *.user
 .vs/
+.build/
 [Bb]in/
 [Oo]bj/
 _UpgradeReport_Files/

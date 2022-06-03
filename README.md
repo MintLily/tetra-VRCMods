@@ -13,15 +13,17 @@
 - [UnmuteSound](../../tree/master/UnmuteSound)
 <!-- - [ComfierVRMenu])(../../tree/master/ComfierVRMenu) SOON™ -->
 <!-- - [VXP])(../../tree/master/VXP) SOON™ -->
-  
+
 ## Preface
 Modification of the VRChat client is a violation of VRChat's [Terms of Service](https://hello.vrchat.com/legal), is not officially supported or endorsed by VRChat, and **can result in an account ban**. However, if using mods that _enhance_ your user experience and do not harm the experience of others, it is generally safe to say that no bans will be issued, as generally, they are undetectable by other users.
 
-The mods listed here (except [AdBlocker](../../tree/master/AdBlocker)) require **VRChatUtilityKit**. Please be sure to install it before using any of my mods! You can get it [here](https://github.com/SleepyVRC/Mods/releases).
+The mods listed here (except [AdBlocker](../../tree/master/AdBlocker) & [CalibrateConfirm](../../tree/master/CalibrateConfirm)) require **VRChatUtilityKit**. Please be sure to install it before using any of my mods! You can get it [here](https://github.com/SleepyVRC/Mods/releases).<br>
+[CalibrateConfirm](../../tree/master/CalibrateConfirm) Requires [ReMod.Core](https://github.com/RequiDev/ReMod.Core). Note that the mod will load this for you, so you do not technically need to do anything with it.
 
 ## Building Locally
 1. Ensure you have the latest [.NET SDK 6](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
 2. Ensure you have run VRChat with [MelonLoader](https://github.com/LavaGang/MelonLoader) installed at least once (to generate the needed assemblies)
-3. Install [VRChatUtilityKit](https://github.com/SleepyVRC/Mods/releases) to `path/to/VRChat/Mods`
-4. Change the [_first_ `VRChatPath` property](https://github.com/tetra-fox/VRCMods/blob/main/Directory.Build.props#L6) in `Directory.build.props` to the path of your VRChat installation.
-5. Build in your favorite IDE or run `dotnet build` in the repository's directory
+3. Create a submodule (if its not already pulled) to [ReMod.Core](https://github.com/RequiDev/ReMod.Core)
+4. Install [VRChatUtilityKit](https://github.com/SleepyVRC/Mods/releases) to `path/to/VRChat/Mods`
+5. Change the [_first_ `VRChatPath` property](https://github.com/tetra-fox/VRCMods/blob/main/Directory.Build.props#L6) in `Directory.build.props` to the path of your VRChat installation.
+6. Build in your favorite IDE or run `dotnet build` in the repository's directory

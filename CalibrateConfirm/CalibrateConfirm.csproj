@@ -10,6 +10,12 @@
     </ItemGroup>
 
     <ItemGroup>
+        <Reference Include="DataModel">
+          <HintPath>$(VRChatPath)\MelonLoader\Managed\DataModel.dll</HintPath>
+        </Reference>
+        <Reference Include="Unity.TextMeshPro">
+          <HintPath>$(VRChatPath)\MelonLoader\Managed\Unity.TextMeshPro.dll</HintPath>
+        </Reference>
         <Reference Include="UnityEngine.AssetBundleModule">
             <HintPath>$(VRChatPath)\MelonLoader\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
         </Reference>
@@ -19,5 +25,26 @@
         <Reference Include="UnityEngine.VRModule">
             <HintPath>$(VRChatPath)\MelonLoader\Managed\UnityEngine.VRModule.dll</HintPath>
         </Reference>
+        <Reference Include="VRC.UI.Core">
+          <HintPath>$(VRChatPath)\MelonLoader\Managed\VRC.UI.Core.dll</HintPath>
+        </Reference>
+        <Reference Include="VRC.UI.Elements">
+          <HintPath>$(VRChatPath)\MelonLoader\Managed\VRC.UI.Elements.dll</HintPath>
+        </Reference>
+        <Reference Include="VRC.UI.Shared">
+          <HintPath>$(VRChatPath)\MelonLoader\Managed\VRC.UI.Shared.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ReMod.Core\ReMod.Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="UserInterface\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="UserInterface\**" />
     </ItemGroup>
 </Project>
